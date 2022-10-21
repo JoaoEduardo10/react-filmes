@@ -42,6 +42,16 @@ export const Conteiner = styled.div`
     img{
         width: 100%;
     } 
+
+    @media (max-width: 1075px) {
+        justify-content: center;
+    
+        .movie-card{
+            margin: 0 auto;
+
+        }
+
+    }
 `;
 
 export const TagLine = styled.p`
@@ -62,5 +72,14 @@ export const Info = styled.div`
 
     p{
         line-height: 1.4rem;
+    }
+
+    @media (max-width: 1075px) {
+        padding-left: 1rem;
+        
+        p{
+            font-size: 1rem;
+            padding: 0rem 1rem;
+        }
     }
 `;

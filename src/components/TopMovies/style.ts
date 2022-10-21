@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 
 export const Conteiner = styled.div`
-
+    @media (max-width: 503px) {
+        h2{
+            font-size: 2rem;
+        }
+    }
 `;
 
 export const H2 = styled.h2<{boolean: boolean}>`
@@ -14,6 +18,11 @@ export const H2 = styled.h2<{boolean: boolean}>`
     span{
         color: ${(props) => props.boolean ? props.theme.color.yellow : '#fff'};
     }
+
+    @media (max-width: 503px) {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
 `;
 
 export const ConteinerMovies = styled.div`
@@ -23,4 +32,10 @@ export const ConteinerMovies = styled.div`
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+
+    @media (max-width: 751px) {
+        flex: auto;
+        flex-direction: column;
+        align-items: center;
+    }
 `;

@@ -4,7 +4,7 @@ export const NavBar = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem .5rem;
     background-color: #121212;
 
     h2 a{
@@ -12,17 +12,35 @@ export const NavBar = styled.nav`
         align-items: center;
         gap: .5rem;
     }
+
+    @media (max-width: 503px) {
+        h2 a{
+            font-size: 1rem;
+        }
+    }
 `;
 
 export const Form = styled.form`
     display: flex;
     gap: .5rem;
+
+    @media (max-width: 503px) {
+        justify-content: end;
+        gap: .3rem;
+    }
 `;
 
 export const Input = styled.input`
     padding: .2rem .8rem;
     border-radius: 4px;
     border: none;
+
+    @media (max-width: 503px) {
+        width: 70%;
+        height: 10%;
+        margin-top: .4rem;
+
+    }
 `;
 
 export const Button = styled.button`
@@ -42,4 +60,6 @@ export const Button = styled.button`
         background-color: transparent;
         color: ${({ theme }) => theme.color.yellow};
     }
+
+    
 `;

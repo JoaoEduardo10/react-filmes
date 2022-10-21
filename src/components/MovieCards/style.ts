@@ -38,4 +38,16 @@ export const conteiner = styled.div`
         background-color: transparent;
         color: ${({ theme }) => theme.color.yellow};
     }
+
+    @media (max-width: 751px) {
+        width: 70%;
+    }
+
+    @media (max-width: 407px) {
+        width: 90%;
+
+        h2{
+            font-size: 1.3rem;
+        }
+    }
 `;

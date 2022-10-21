@@ -2,6 +2,15 @@ import styled from "styled-components";
 
 
 export const Conteiner = styled.div`
+    .carregando{
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        width: 10%;
+    }
+    
+    
     @media (max-width: 503px) {
         h2{
             font-size: 2rem;
@@ -18,6 +27,7 @@ export const H2 = styled.h2<{boolean: boolean}>`
     span{
         color: ${(props) => props.boolean ? props.theme.color.yellow : '#fff'};
     }
+
 
     @media (max-width: 503px) {
         padding: 0.5rem;
@@ -38,11 +48,4 @@ export const ConteinerMovies = styled.div`
         flex-direction: column;
         align-items: center;
     }
-`;
-
-export const Logo = styled.img`
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 4%;
 `;

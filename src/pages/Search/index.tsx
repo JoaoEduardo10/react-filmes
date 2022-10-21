@@ -5,8 +5,8 @@ import { useSearchParams } from "react-router-dom"
 import { TopMovie } from '../../components/TopMovies'
 import { ApiProp } from '../../types/types'
 
-const searchUrl = import.meta.env.VITE_SEARCH
-const apiKey = import.meta.env.VITE_API_KEY
+const searchUrl = "https://api.themoviedb.org/3/search/movie/"
+const apiKey = "api_key=4e5016742c1bb52c071a9e508f7ea500"
 
 
 export const Search = () => {

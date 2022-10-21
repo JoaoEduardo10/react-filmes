@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import { TopMovie } from "../../components/TopMovies";
 
-const movieUrl = import.meta.env.VITE_API
-const apiKei = import.meta.env.VITE_API_KEY
+const movieUrl = "https://api.themoviedb.org/3/movie/"
+const apiKei = "api_key=4e5016742c1bb52c071a9e508f7ea500"
 
 import { ApiProp } from '../../types/types'
 

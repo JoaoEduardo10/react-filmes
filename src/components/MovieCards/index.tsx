@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { FaStar } from "react-icons/fa";
 import { ApiProp } from '../../types/types';
 
-const imageUrl = import.meta.env.VITE_IMG
+const imageUrl = "https://image.tmdb.org/t/p/w500/"
 
 type MoviesCardsProps = {
     movie: ApiProp,

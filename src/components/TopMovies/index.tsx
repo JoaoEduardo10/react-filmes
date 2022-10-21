@@ -18,7 +18,7 @@ export const TopMovie = ({ TopMovies, query, text = 'Melhores Filmes: ', boolean
             <img src="" alt="" />
             <S.H2 boolean={boolean}>{text} <span>{boolean && query}</span> </S.H2>
             <S.ConteinerMovies>
-                {TopMovies.length === 0 && <S.Logo src={carregando} alt='Icone de carregamento' />}
+                {TopMovies.length === 0 && <img className='carregando' src={carregando}></img>}
                 {TopMovies.length > 0 && TopMovies.map((movie) => <MoviesCards key={movie.id} movie={movie} />)}
             </S.ConteinerMovies>
         </S.Conteiner>
